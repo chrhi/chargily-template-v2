@@ -6,7 +6,7 @@ export async function GET() {
         Authorization: `Bearer ${process.env.CHARGILY_SECRET_KEY}`,
         "Content-Type": "application/json",
       },
-      body: '{"amount":1000,"currency":"dzd","success_url":"https://your-cool-website.com/payments/success"}',
+      body: '{"amount":1000,"currency":"dzd","success_url":"https://chargily-template-v2.vercel.app/success"}',
     };
 
     const response = await fetch(
